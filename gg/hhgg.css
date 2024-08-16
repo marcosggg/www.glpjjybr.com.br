@@ -1,0 +1,152 @@
+body {
+ background-color: black;
+ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    
+    
+}
+ 
+
+
+
+
+
+.custom-size {
+    width: 171.3px;
+    height: 128px;
+    background-color: #fffbfb; /* Cor de fundo para visualizar melhor o tamanho */
+    line-height: 128px; /* Centraliza verticalmente o texto */
+    text-align: center; /* Centraliza horizontalmente o texto */
+    font-size: 24px; /* Tamanho do texto */
+    margin: 0 auto; /* Centraliza o elemento na página */
+    border: 1px solid #000000; /* Borda para melhor visualização */
+}
+
+
+
+
+
+
+/* Esconde a checkbox */
+#cookie-checkbox {
+    display: none;
+}
+
+/* Estilo para o container de consentimento de cookies */
+#cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Estilo para o texto */
+#cookie-consent p {
+    margin: 0;
+    padding-right: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilo para o botão */
+#accept-cookie {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+#accept-cookie:hover {
+    background-color: #45a049;
+}
+
+/* Quando a checkbox é marcada, esconder o aviso */
+#cookie-checkbox:checked ~ #cookie-consent {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #cookie-consent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cookie-consent p {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #accept-cookie {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna (um embaixo do outro) */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz o corpo ocupar 100% da altura da janela */
+    margin: 0;
+}
+
+.imagem {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto;
+    margin-bottom: 50px; /* Adiciona espaço abaixo da imagem */
+}
+
+.botao-download {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
